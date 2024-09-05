@@ -3,7 +3,6 @@ function Project({ title, imageUrl, deployedLink, repoLink }) {
       <div className="project">
         <h2>{title}</h2>
         <img src={imageUrl} alt={title} />
-        <a href={deployedLink}>Live App</a>
         <a href={repoLink}>GitHub Repo</a>
       </div>
     );
