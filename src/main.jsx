@@ -1,41 +1,13 @@
-import ReactDOM from 'react-dom/client';
-// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Make sure App is correctly imported
+// import './index.css'; // Include any global styles
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+const rootElement = document.getElementById('root');
 
-// Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './App';
-import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
-import ProfilePage from './pages/ProfilePage';
-import AboutPage from './pages/AboutPage';
-
-// Define the accessible routes, and which components respond to which URL
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: 'profile/:id',
-        element: <ProfilePage />,
-      },
-      {
-        path: 'about',
-        element: <AboutPage />,
-      },
-    ],
-  },
-]);
-
-// Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
 );
