@@ -1,4 +1,3 @@
-
 # React Developer Portfolio
 
 ## Description

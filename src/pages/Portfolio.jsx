@@ -1,15 +1,16 @@
 import React from 'react';
+import '../Portfolio.css';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A brief description of project one.',
-    link: 'https://github.com/yourprofile/project-one',
+    title: 'Event Planner Project',
+    description: 'Utilizing the Google Calendar API, you can plan events through a streamline interface.',
+    link: 'https://github.com/domspinn/Event-Planner-Project',
   },
   {
-    title: 'Project Two',
-    description: 'A brief description of project two.',
-    link: 'https://github.com/yourprofile/project-two',
+    title: 'Movie Collections',
+    description: 'Like LetterBoxd, but not! Save movies you have watched and rate them too! All under an account and saved to a database.',
+    link: 'https://github.com/domspinn/Movie-Collections',
   },
 ];
 
